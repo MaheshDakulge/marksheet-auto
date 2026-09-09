@@ -1,14 +1,15 @@
 FROM python:3.11-slim
 
-# Prevent Python from writing bytecode and buffer stdout/stderr
+# Prevent Python from writing bytecode, buffer stdout/stderr, and non-interactive apt
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies (Tesseract OCR, English language data, Poppler, OpenCV/Pillow requirements)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr \
     tesseract-ocr-eng \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     poppler-utils \
     && rm -rf /var/lib/apt/lists/*
