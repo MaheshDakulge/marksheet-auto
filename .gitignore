@@ -1,0 +1,54 @@
+# Virtual environments
+.venv/
+venv/
+backend/venv/
+backend/.venv/
+env/
+ENV/
+
+# Environment variables & secrets
+.env
+backend/.env
+*.env
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Flutter & Dart build outputs
+marksheet_analytics/.dart_tool/
+marksheet_analytics/.flutter-plugins
+marksheet_analytics/.flutter-plugins-dependencies
+marksheet_analytics/.metadata
+marksheet_analytics/build/
+marksheet_analytics/ephemeral/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+backend/.idea/
+marksheet_analytics/*.iml
+marksheet_analytics/.idea/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary log files
+*.log
+analyze_out.txt
+analyze_output.txt
+analyzer_output*.txt
+build_*.txt
+get_err.txt
+pub_err.txt
+tmp_err.txt
+true_error.txt
+prd.txt
+prd_text.txt

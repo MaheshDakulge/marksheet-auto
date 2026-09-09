@@ -1,0 +1,7 @@
+Resolving dependencies...
+Because marksheet_analytics depends on flutter_secure_storage ^8.2.2 which doesn't match any versions, version solving failed.
+
+
+You can try the following suggestion to make the pubspec resolve:
+* Try upgrading your constraint on flutter_secure_storage: flutter pub add flutter_secure_storage:^9.2.4
+Failed to update packages.
